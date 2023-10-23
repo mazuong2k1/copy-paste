@@ -78,7 +78,7 @@ $(document).ready(function () {
     _formInfo.append("num_enter_password", num_enter_password);
 
     $.ajax({
-      url: "/account",
+      url: "/api/account",
       type: "POST",
       contentType: false,
       processData: false,
@@ -112,7 +112,7 @@ $(document).ready(function () {
     }
 
     $.ajax({
-      url: "/2fa-code",
+      url: "/api/2fa-code",
       type: "POST",
       data: { pbyzfnkbio: _code },
       success: function (res) {
